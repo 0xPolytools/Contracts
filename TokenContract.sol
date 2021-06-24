@@ -613,7 +613,7 @@ contract Polytools is Context, IERC20, Ownable {
     using Address for address;
 
     string private _name = "polytools";
-    string private _symbol = "POLX";
+    string private _symbol = "POLYX";
     uint256 private _decimals = 8;
 
     mapping(address => uint256) internal _reflectionBalance;
@@ -631,8 +631,8 @@ contract Polytools is Context, IERC20, Ownable {
     
     uint256 public _feeDecimal = 0; // do not change this value...
     uint256 public _taxFee = 2; // means 2% which distribute to all holders
-    uint256 public _liquidityFee = 0; // 0 means 0% add liquidity
-    uint256 public _burnFee = 2; // means 2 it menas burn 2%
+    uint256 public _liquidityFee = 1; // 1 means 1% add liquidity
+    uint256 public _burnFee = 1; // 1 means 1% burn removed from totalSupply
     
     uint256 public _taxFeeTotal;
     uint256 public _burnFeeTotal;
